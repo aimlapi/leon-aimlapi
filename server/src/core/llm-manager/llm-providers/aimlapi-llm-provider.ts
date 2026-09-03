@@ -15,7 +15,7 @@ const AIMLAPI_ATTRIBUTION_HEADERS: Readonly<Record<string, string>> =
     'HTTP-Referer': 'https://github.com/leon-ai/leon',
     'X-Title': 'Leon',
     'X-AIMLAPI-Source': 'agent/leon',
-    'X-AIMLAPI-Partner-ID': 'part_leon'
+    'X-AIMLAPI-Partner-ID': 'part_lcAMsJBHJpF6eW4JFtT3pJfW'
   })
 
 function resolveBaseURL(): string {

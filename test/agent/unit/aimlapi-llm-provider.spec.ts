@@ -202,7 +202,7 @@ describe('AIMLAPILLMProvider', () => {
     expect(headers['http-referer']).toBe('https://github.com/leon-ai/leon')
     expect(headers['x-title']).toBe('Leon')
     expect(headers['x-aimlapi-source']).toBe('agent/leon')
-    expect(headers['x-aimlapi-partner-id']).toBe('part_leon')
+    expect(headers['x-aimlapi-partner-id']).toBe('part_lcAMsJBHJpF6eW4JFtT3pJfW')
     expect(headers['x-aimlapi-partner-id']).toMatch(PARTNER_ID_PATTERN)
   })
 
@@ -231,7 +231,7 @@ describe('AIMLAPILLMProvider', () => {
 
     first['X-AIMLAPI-Partner-ID'] = 'part_mutated'
 
-    expect(second['X-AIMLAPI-Partner-ID']).toBe('part_leon')
+    expect(second['X-AIMLAPI-Partner-ID']).toBe('part_lcAMsJBHJpF6eW4JFtT3pJfW')
     expect(buildAIMLAPIHeaders('not-a-url')).toEqual({})
     expect(buildAIMLAPIHeaders('https://api.aimlapi.com.evil.test/v1'))
       .toEqual({})
