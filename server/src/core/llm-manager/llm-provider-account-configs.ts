@@ -16,6 +16,12 @@ export interface LLMProviderAccountConfig {
 export const LLM_PROVIDER_ACCOUNT_CONFIGS: ReadonlyArray<LLMProviderAccountConfig> =
   Object.freeze([
     {
+      label: 'aimlapi.com',
+      value: LLMProviders.AIMLAPI,
+      apiKeyEnv: 'LEON_AIMLAPI_API_KEY',
+      apiKeyURL: 'https://aimlapi.com/app/keys'
+    },
+    {
       label: 'OpenRouter',
       value: LLMProviders.OpenRouter,
       apiKeyEnv: 'LEON_OPENROUTER_API_KEY',

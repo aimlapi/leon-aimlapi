@@ -26,6 +26,7 @@ export enum LLMProviders {
   OpenRouter = 'openrouter',
   ZAI = 'zai',
   MiniMax = 'minimax',
+  AIMLAPI = 'aimlapi',
   OpenAI = 'openai',
   Anthropic = 'anthropic',
   MoonshotAI = 'moonshotai',
